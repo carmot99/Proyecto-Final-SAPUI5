@@ -1,0 +1,45 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" 
+          xmlns="sap.m" 
+          controllerName="masterfiori.controller.Main"
+          displayBlock="true">
+
+<Shell id="_IDGenShell1">
+<App id="_IDGenApp1">
+    <Page id="page" title="{i18n>title}">
+        <content>
+        <Panel xmlns="sap.m" width="auto" expandable="true" expanded="true" id="panel0">
+            <headerToolbar>
+                <Toolbar id="toolbar1">
+                    <Title id="_IDGenTitle1" text="{i18n>empleados}"/>
+                </Toolbar>
+                
+            </headerToolbar>
+            <content>
+                <FlexBox width="100%" id="employeesBox">
+                    <items>
+                        <GenericTile header="{i18n>crearEmpleado}" id="crearEmpleado" headerImage="sap-icon://add-employee" press="navigateToCrearEmpleado"/>
+                        <GenericTile header="{i18n>verEmpleados}" id="verEmpleados" headerImage="sap-icon://employee-lookup" press="navigateToVerEmpleado"/>
+                    </items>
+                </FlexBox>
+            </content>
+            </Panel>
+        <Panel xmlns="sap.m" width="auto" expandable="true" expanded="true" id="panel1">
+            <headerToolbar>
+                <Toolbar id="toolbar2">
+                    <Title id="_IDGenTitle2" text="{i18n>pedido}"/>
+                </Toolbar>
+                
+            </headerToolbar>
+            <content>
+                <FlexBox width="100%" id="ordersBox">
+                    <items>
+                        <GenericTile header="{i18n>firmarPedido}" id="firmarPedido" headerImage="sap-icon://signature" press="navigateToFirmarPedido"/>
+                    </items>
+                </FlexBox>
+            </content>
+            </Panel>
+        </content>
+    </Page>
+</App>
+</Shell>
+</mvc:View>
